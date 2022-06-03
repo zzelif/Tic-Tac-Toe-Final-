@@ -44,6 +44,9 @@
             this.resetButton = new System.Windows.Forms.Button();
             this.timerAi = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.picBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTictactoe = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn1
@@ -177,6 +180,7 @@
             this.lblScore1.AutoSize = true;
             this.lblScore1.BackColor = System.Drawing.Color.BurlyWood;
             this.lblScore1.Font = new System.Drawing.Font("Brush Script MT", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore1.Image = ((System.Drawing.Image)(resources.GetObject("lblScore1.Image")));
             this.lblScore1.Location = new System.Drawing.Point(751, 161);
             this.lblScore1.Name = "lblScore1";
             this.lblScore1.Size = new System.Drawing.Size(30, 41);
@@ -188,6 +192,7 @@
             this.lblScore2.AutoSize = true;
             this.lblScore2.BackColor = System.Drawing.Color.BurlyWood;
             this.lblScore2.Font = new System.Drawing.Font("Brush Script MT", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore2.Image = ((System.Drawing.Image)(resources.GetObject("lblScore2.Image")));
             this.lblScore2.Location = new System.Drawing.Point(751, 271);
             this.lblScore2.Name = "lblScore2";
             this.lblScore2.Size = new System.Drawing.Size(30, 41);
@@ -219,11 +224,39 @@
             this.label1.BackColor = System.Drawing.Color.BurlyWood;
             this.label1.Font = new System.Drawing.Font("Blackadder ITC", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Cornsilk;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
             this.label1.Location = new System.Drawing.Point(862, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 60);
             this.label1.TabIndex = 12;
             this.label1.Text = "Score";
+            // 
+            // picBox1
+            // 
+            this.picBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBox1.BackgroundImage")));
+            this.picBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.picBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picBox1.ErrorImage")));
+            this.picBox1.Image = ((System.Drawing.Image)(resources.GetObject("picBox1.Image")));
+            this.picBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBox1.InitialImage")));
+            this.picBox1.Location = new System.Drawing.Point(1312, 161);
+            this.picBox1.Name = "picBox1";
+            this.picBox1.Size = new System.Drawing.Size(307, 397);
+            this.picBox1.TabIndex = 13;
+            this.picBox1.TabStop = false;
+            // 
+            // lblTictactoe
+            // 
+            this.lblTictactoe.AutoSize = true;
+            this.lblTictactoe.BackColor = System.Drawing.Color.BurlyWood;
+            this.lblTictactoe.Font = new System.Drawing.Font("Blackadder ITC", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTictactoe.ForeColor = System.Drawing.Color.Cornsilk;
+            this.lblTictactoe.Image = ((System.Drawing.Image)(resources.GetObject("lblTictactoe.Image")));
+            this.lblTictactoe.Location = new System.Drawing.Point(1351, 47);
+            this.lblTictactoe.Name = "lblTictactoe";
+            this.lblTictactoe.Size = new System.Drawing.Size(216, 60);
+            this.lblTictactoe.TabIndex = 14;
+            this.lblTictactoe.Text = "Tic Tac Toe";
+            this.lblTictactoe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // formTictactoe
             // 
@@ -231,7 +264,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1165, 600);
+            this.ClientSize = new System.Drawing.Size(1781, 610);
+            this.Controls.Add(this.lblTictactoe);
+            this.Controls.Add(this.picBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.lblScore2);
@@ -246,11 +281,14 @@
             this.Controls.Add(this.Btn2);
             this.Controls.Add(this.Btn1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formTictactoe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "play";
             this.Text = "Versus Bot";
             this.Click += new System.EventHandler(this.buttonClick);
+            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,6 +310,8 @@
         private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.Timer timerAi;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picBox1;
+        private System.Windows.Forms.Label lblTictactoe;
     }
 }
 
