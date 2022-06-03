@@ -273,6 +273,7 @@
             this.infoBtn.TabIndex = 15;
             this.infoBtn.Text = "Info";
             this.infoBtn.UseVisualStyleBackColor = false;
+            this.infoBtn.Click += new System.EventHandler(this.infobtnClick);
             // 
             // formTictactoe
             // 

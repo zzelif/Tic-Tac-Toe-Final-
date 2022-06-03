@@ -149,5 +149,10 @@ namespace FinalTicTacToe
 
             }
         }
+
+        private void infobtnClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Made possible by the community", "Tic Tac Toe", MessageBoxButtons.OK);
+        }
     }
 }
