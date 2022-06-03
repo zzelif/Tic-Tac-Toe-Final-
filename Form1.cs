@@ -16,5 +16,10 @@ namespace FinalTicTacToe
         {
             InitializeComponent();
         }
+
+        private void buttonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
