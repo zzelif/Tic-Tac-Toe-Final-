@@ -84,7 +84,6 @@ namespace FinalTicTacToe
                 }
 
             }
-            counter = 0;
         }
 
         private void Check()
