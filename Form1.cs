@@ -152,7 +152,9 @@ namespace FinalTicTacToe
 
         private void infobtnClick(object sender, EventArgs e)
         {
+            soundPlayer = new SoundPlayer("click.wav");soundPlayer.Play();
             MessageBox.Show("Made possible by the community", "Tic Tac Toe", MessageBoxButtons.OK);
         }
+
     }
 }
