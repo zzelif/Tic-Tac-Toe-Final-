@@ -47,7 +47,26 @@ namespace FinalTicTacToe
 
         private void playAi(object sender, EventArgs e)
         {
-
+            foreach (Control x in this.Controls)
+            {
+                if (x is Button && x.Text == "" && x.Enabled)
+                {
+                    x.Enabled = false;
+                    currentPlayer = Player.O;
+                    x.Text = currentPlayer.ToString();
+                    x.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+                    soundPlayer = new SoundPlayer("click.wav");
+                    counter++;
+                    timerAi.Stop();
+                    Check();
+                    soundPlayer.Play();
+                    break;
+                }
+                else
+                {
+                    timerAi.Stop();
+                }
+            }
         }
 
         private void resetGame(object sender, EventArgs e)
