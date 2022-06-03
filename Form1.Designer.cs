@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formTictactoe));
             this.Btn1 = new System.Windows.Forms.Button();
             this.Btn2 = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.lblScore2 = new System.Windows.Forms.Label();
             this.txtboxScore = new System.Windows.Forms.TextBox();
             this.resetButton = new System.Windows.Forms.Button();
+            this.timerAi = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Btn1
@@ -206,6 +208,12 @@
             this.resetButton.TabIndex = 11;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetGame);
+            // 
+            // timerAi
+            // 
+            this.timerAi.Interval = 500;
+            this.timerAi.Tick += new System.EventHandler(this.playAi);
             // 
             // formTictactoe
             // 
@@ -213,7 +221,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1147, 615);
+            this.ClientSize = new System.Drawing.Size(1156, 589);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.txtboxScore);
             this.Controls.Add(this.lblScore2);
@@ -253,6 +261,7 @@
         private System.Windows.Forms.Label lblScore2;
         private System.Windows.Forms.TextBox txtboxScore;
         private System.Windows.Forms.Button resetButton;
+        private System.Windows.Forms.Timer timerAi;
     }
 }
 

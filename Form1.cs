@@ -21,5 +21,15 @@ namespace FinalTicTacToe
         {
 
         }
+
+        private void playAi(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resetGame(object sender, EventArgs e)
+        {
+
+        }
     }
 }
