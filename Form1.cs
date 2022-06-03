@@ -37,7 +37,7 @@ namespace FinalTicTacToe
                 currentPlayer = Player.X;
                 button.Text = currentPlayer.ToString();
                 button.Enabled = false;
-                button.BackColor = System.Drawing.Color.LightGreen;
+                button.BackColor = System.Drawing.Color.DarkTurquoise;
                 counter++;
                 soundPlayer = new SoundPlayer("click.wav");
                 Check();
@@ -56,7 +56,7 @@ namespace FinalTicTacToe
                     x.Enabled = false;
                     currentPlayer = Player.O;
                     x.Text = currentPlayer.ToString();
-                    x.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+                    x.BackColor = System.Drawing.Color.DarkSeaGreen;
                     soundPlayer = new SoundPlayer("click.wav");
                     counter++;
                     timerAi.Stop();

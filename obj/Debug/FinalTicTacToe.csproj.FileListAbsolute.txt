@@ -1,0 +1,11 @@
+C:\Users\ASUS\source\repos\FinalTicTacToe\bin\Debug\FinalTicTacToe.exe.config
+C:\Users\ASUS\source\repos\FinalTicTacToe\bin\Debug\FinalTicTacToe.exe
+C:\Users\ASUS\source\repos\FinalTicTacToe\bin\Debug\FinalTicTacToe.pdb
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.formTictactoe.resources
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.Properties.Resources.resources
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.exe
+C:\Users\ASUS\source\repos\FinalTicTacToe\obj\Debug\FinalTicTacToe.pdb
