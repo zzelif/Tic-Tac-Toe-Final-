@@ -12,9 +12,19 @@ namespace FinalTicTacToe
 {
     public partial class formTictactoe : Form
     {
+        Player currentPlayer;
+        int playerWins = 0;
+        int computerWins = 0;
+        int counter = 0;
+
         public formTictactoe()
         {
             InitializeComponent();
+        }
+        public enum Player
+        {
+            X,
+            O
         }
 
         private void buttonClick(object sender, EventArgs e)
@@ -42,7 +52,18 @@ namespace FinalTicTacToe
 
         private void resetGame(object sender, EventArgs e)
         {
+            foreach (Control x in this.Controls)
+            {
 
+                if (x is Button && x.Tag == "play")
+                {
+                    ((Button)x).Enabled = true;
+                    ((Button)x).Text = "";
+                    ((Button)x).BackColor = default(Color);
+                }
+
+            }
+            counter = 0;
         }
     }
 }
