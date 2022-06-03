@@ -130,5 +130,20 @@ namespace FinalTicTacToe
                 soundPlayer.Play();
             }
         }
+
+        private void WON()
+        {
+            foreach (Control x in this.Controls)
+            {
+
+                if (x is Button && x.Tag == "play")
+                {
+                    ((Button)x).Enabled = false;
+                    ((Button)x).BackColor = default(Color);
+
+                }
+
+            }
+        }
     }
 }
