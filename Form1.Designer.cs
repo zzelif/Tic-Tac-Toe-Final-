@@ -46,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picBox1 = new System.Windows.Forms.PictureBox();
             this.lblTictactoe = new System.Windows.Forms.Label();
+            this.infoBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,6 +261,19 @@
             this.lblTictactoe.Text = "Tic Tac Toe";
             this.lblTictactoe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // infoBtn
+            // 
+            this.infoBtn.BackColor = System.Drawing.Color.BurlyWood;
+            this.infoBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("infoBtn.BackgroundImage")));
+            this.infoBtn.Font = new System.Drawing.Font("Blackadder ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infoBtn.ForeColor = System.Drawing.Color.Cornsilk;
+            this.infoBtn.Location = new System.Drawing.Point(860, 511);
+            this.infoBtn.Name = "infoBtn";
+            this.infoBtn.Size = new System.Drawing.Size(120, 32);
+            this.infoBtn.TabIndex = 15;
+            this.infoBtn.Text = "Info";
+            this.infoBtn.UseVisualStyleBackColor = false;
+            // 
             // formTictactoe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,6 +281,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1109, 598);
+            this.Controls.Add(this.infoBtn);
             this.Controls.Add(this.lblTictactoe);
             this.Controls.Add(this.picBox1);
             this.Controls.Add(this.label1);
@@ -314,6 +329,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picBox1;
         private System.Windows.Forms.Label lblTictactoe;
+        private System.Windows.Forms.Button infoBtn;
     }
 }
 
