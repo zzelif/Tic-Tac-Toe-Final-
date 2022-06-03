@@ -41,11 +41,13 @@
             this.lblScore1 = new System.Windows.Forms.Label();
             this.lblScore2 = new System.Windows.Forms.Label();
             this.txtboxScore = new System.Windows.Forms.TextBox();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn1
             // 
             this.Btn1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn1.BackgroundImage")));
             this.Btn1.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn1.Location = new System.Drawing.Point(41, 47);
             this.Btn1.Name = "Btn1";
@@ -58,6 +60,7 @@
             // Btn2
             // 
             this.Btn2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn2.BackgroundImage")));
             this.Btn2.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn2.Location = new System.Drawing.Point(279, 47);
             this.Btn2.Name = "Btn2";
@@ -70,6 +73,7 @@
             // Btn3
             // 
             this.Btn3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn3.BackgroundImage")));
             this.Btn3.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn3.Location = new System.Drawing.Point(519, 47);
             this.Btn3.Name = "Btn3";
@@ -82,6 +86,7 @@
             // Btn4
             // 
             this.Btn4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn4.BackgroundImage")));
             this.Btn4.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn4.Location = new System.Drawing.Point(41, 238);
             this.Btn4.Name = "Btn4";
@@ -94,6 +99,7 @@
             // Btn5
             // 
             this.Btn5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn5.BackgroundImage")));
             this.Btn5.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn5.Location = new System.Drawing.Point(279, 238);
             this.Btn5.Name = "Btn5";
@@ -106,6 +112,7 @@
             // Btn6
             // 
             this.Btn6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn6.BackgroundImage")));
             this.Btn6.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn6.Location = new System.Drawing.Point(519, 238);
             this.Btn6.Name = "Btn6";
@@ -118,6 +125,7 @@
             // Btn8
             // 
             this.Btn8.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn8.BackgroundImage")));
             this.Btn8.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn8.Location = new System.Drawing.Point(279, 423);
             this.Btn8.Name = "Btn8";
@@ -130,6 +138,7 @@
             // Btn7
             // 
             this.Btn7.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn7.BackgroundImage")));
             this.Btn7.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn7.Location = new System.Drawing.Point(41, 423);
             this.Btn7.Name = "Btn7";
@@ -142,6 +151,7 @@
             // Btn9
             // 
             this.Btn9.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Btn9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn9.BackgroundImage")));
             this.Btn9.Font = new System.Drawing.Font("Blackadder ITC", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn9.Location = new System.Drawing.Point(519, 423);
             this.Btn9.Name = "Btn9";
@@ -184,6 +194,19 @@
             this.txtboxScore.TabIndex = 10;
             this.txtboxScore.Text = "Score";
             // 
+            // resetButton
+            // 
+            this.resetButton.BackColor = System.Drawing.Color.BurlyWood;
+            this.resetButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resetButton.BackgroundImage")));
+            this.resetButton.Font = new System.Drawing.Font("Blackadder ITC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.ForeColor = System.Drawing.Color.Cornsilk;
+            this.resetButton.Location = new System.Drawing.Point(834, 423);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(170, 66);
+            this.resetButton.TabIndex = 11;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = false;
+            // 
             // formTictactoe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -191,6 +214,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1147, 615);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.txtboxScore);
             this.Controls.Add(this.lblScore2);
             this.Controls.Add(this.lblScore1);
@@ -228,6 +252,7 @@
         private System.Windows.Forms.Label lblScore1;
         private System.Windows.Forms.Label lblScore2;
         private System.Windows.Forms.TextBox txtboxScore;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 
