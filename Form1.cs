@@ -76,7 +76,7 @@ namespace FinalTicTacToe
             foreach (Control x in this.Controls)
             {
 
-                if (x is Button && x.Tag.ToString() == "play")
+                if (x is Button && (string)x.Tag == "play")
                 {
                     ((Button)x).Enabled = true;
                     ((Button)x).Text = "";
@@ -140,7 +140,7 @@ namespace FinalTicTacToe
             foreach (Control x in this.Controls)
             {
 
-                if (x is Button && x.Tag.ToString() == "play")
+                if (x is Button && (string)x.Tag == "play")
                 {
                     ((Button)x).Enabled = false;
                     ((Button)x).BackColor = default(Color);
