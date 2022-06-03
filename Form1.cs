@@ -19,7 +19,20 @@ namespace FinalTicTacToe
 
         private void buttonClick(object sender, EventArgs e)
         {
-
+            try
+            {
+                var button = (Button)sender;
+                currentPlayer = Player.X;
+                button.Text = currentPlayer.ToString();
+                button.Enabled = false;
+                button.BackColor = System.Drawing.Color.LightGreen;
+                counter++;
+                soundPlayer = new SoundPlayer("click.wav");
+                Check();
+                timerAi.Start();
+                soundPlayer.Play();
+            }
+            catch { }
         }
 
         private void playAi(object sender, EventArgs e)

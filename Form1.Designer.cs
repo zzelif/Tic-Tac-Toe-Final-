@@ -190,8 +190,9 @@
             this.txtboxScore.BackColor = System.Drawing.Color.BurlyWood;
             this.txtboxScore.Font = new System.Drawing.Font("Blackadder ITC", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxScore.ForeColor = System.Drawing.Color.Teal;
-            this.txtboxScore.Location = new System.Drawing.Point(856, 39);
+            this.txtboxScore.Location = new System.Drawing.Point(869, 47);
             this.txtboxScore.Name = "txtboxScore";
+            this.txtboxScore.ReadOnly = true;
             this.txtboxScore.Size = new System.Drawing.Size(109, 63);
             this.txtboxScore.TabIndex = 10;
             this.txtboxScore.Text = "Score";
@@ -221,7 +222,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1156, 589);
+            this.ClientSize = new System.Drawing.Size(1156, 603);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.txtboxScore);
             this.Controls.Add(this.lblScore2);
