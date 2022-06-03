@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace FinalTicTacToe
 {
     public partial class formTictactoe : Form
     {
+        private SoundPlayer soundPlayer;
         Player currentPlayer;
         int playerWins = 0;
         int computerWins = 0;
