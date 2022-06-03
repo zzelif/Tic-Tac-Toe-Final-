@@ -180,6 +180,7 @@
             this.lblScore1.AutoSize = true;
             this.lblScore1.BackColor = System.Drawing.Color.BurlyWood;
             this.lblScore1.Font = new System.Drawing.Font("Brush Script MT", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore1.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblScore1.Image = ((System.Drawing.Image)(resources.GetObject("lblScore1.Image")));
             this.lblScore1.Location = new System.Drawing.Point(751, 161);
             this.lblScore1.Name = "lblScore1";
@@ -192,6 +193,7 @@
             this.lblScore2.AutoSize = true;
             this.lblScore2.BackColor = System.Drawing.Color.BurlyWood;
             this.lblScore2.Font = new System.Drawing.Font("Brush Script MT", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore2.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblScore2.Image = ((System.Drawing.Image)(resources.GetObject("lblScore2.Image")));
             this.lblScore2.Location = new System.Drawing.Point(751, 271);
             this.lblScore2.Name = "lblScore2";
@@ -225,7 +227,7 @@
             this.label1.Font = new System.Drawing.Font("Blackadder ITC", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Cornsilk;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(862, 47);
+            this.label1.Location = new System.Drawing.Point(850, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 60);
             this.label1.TabIndex = 12;
@@ -238,9 +240,9 @@
             this.picBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picBox1.ErrorImage")));
             this.picBox1.Image = ((System.Drawing.Image)(resources.GetObject("picBox1.Image")));
             this.picBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBox1.InitialImage")));
-            this.picBox1.Location = new System.Drawing.Point(1312, 161);
+            this.picBox1.Location = new System.Drawing.Point(1160, 161);
             this.picBox1.Name = "picBox1";
-            this.picBox1.Size = new System.Drawing.Size(307, 397);
+            this.picBox1.Size = new System.Drawing.Size(748, 405);
             this.picBox1.TabIndex = 13;
             this.picBox1.TabStop = false;
             // 
@@ -251,7 +253,7 @@
             this.lblTictactoe.Font = new System.Drawing.Font("Blackadder ITC", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTictactoe.ForeColor = System.Drawing.Color.Cornsilk;
             this.lblTictactoe.Image = ((System.Drawing.Image)(resources.GetObject("lblTictactoe.Image")));
-            this.lblTictactoe.Location = new System.Drawing.Point(1351, 47);
+            this.lblTictactoe.Location = new System.Drawing.Point(1416, 47);
             this.lblTictactoe.Name = "lblTictactoe";
             this.lblTictactoe.Size = new System.Drawing.Size(216, 60);
             this.lblTictactoe.TabIndex = 14;
@@ -264,7 +266,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1781, 610);
+            this.ClientSize = new System.Drawing.Size(1109, 598);
             this.Controls.Add(this.lblTictactoe);
             this.Controls.Add(this.picBox1);
             this.Controls.Add(this.label1);
@@ -280,7 +282,7 @@
             this.Controls.Add(this.Btn3);
             this.Controls.Add(this.Btn2);
             this.Controls.Add(this.Btn1);
-            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ForeColor = System.Drawing.Color.BurlyWood;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "formTictactoe";
