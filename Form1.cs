@@ -84,5 +84,51 @@ namespace FinalTicTacToe
             }
             counter = 0;
         }
+
+        private void Check()
+        {
+            if (
+            Btn1.Text == "X" && Btn2.Text == "X" && Btn3.Text == "X" ||//Horizontal
+            Btn4.Text == "X" && Btn5.Text == "X" && Btn6.Text == "X" ||
+            Btn7.Text == "X" && Btn8.Text == "X" && Btn9.Text == "X" ||
+            Btn1.Text == "X" && Btn4.Text == "X" && Btn7.Text == "X" ||//Vertical
+            Btn2.Text == "X" && Btn5.Text == "X" && Btn8.Text == "X" ||
+            Btn3.Text == "X" && Btn6.Text == "X" && Btn9.Text == "X" ||
+            Btn1.Text == "X" && Btn5.Text == "X" && Btn9.Text == "X" ||//Diagonal
+            Btn3.Text == "X" && Btn5.Text == "X" && Btn7.Text == "X")
+            {
+                soundPlayer = new SoundPlayer("youwin.wav");
+                MessageBox.Show("Player Wins");
+                playerWins++;
+                WON();
+                soundPlayer.Play();
+                lblScore1.Text = "Player Wins- " + playerWins;
+            }
+            else if (
+            Btn1.Text == "O" && Btn2.Text == "O" && Btn3.Text == "O" ||//Horizontal
+            Btn4.Text == "O" && Btn5.Text == "O" && Btn6.Text == "O" ||
+            Btn7.Text == "O" && Btn8.Text == "O" && Btn9.Text == "O" ||
+            Btn1.Text == "O" && Btn4.Text == "O" && Btn7.Text == "O" ||//Vertical
+            Btn2.Text == "O" && Btn5.Text == "O" && Btn8.Text == "O" ||
+            Btn3.Text == "O" && Btn6.Text == "O" && Btn9.Text == "O" ||
+            Btn1.Text == "O" && Btn5.Text == "O" && Btn9.Text == "O" || //Diagonal
+            Btn3.Text == "O" && Btn5.Text == "O" && Btn7.Text == "O")
+            {
+                soundPlayer = new SoundPlayer("youlose.wav");
+                MessageBox.Show("Computer Wins");
+                computerWins++;
+                WON();
+                soundPlayer.Play();
+                lblScore2.Text = "Computer Wins- " + computerWins;
+            }
+            counter = counter + 0;
+            if (counter == 9)
+            {
+                soundPlayer = new SoundPlayer("draw.wav");
+                MessageBox.Show("Draw");
+                counter = 0;
+                soundPlayer.Play();
+            }
+        }
     }
 }
