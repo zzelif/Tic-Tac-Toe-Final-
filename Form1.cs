@@ -37,7 +37,7 @@ namespace FinalTicTacToe
                 currentPlayer = Player.X;
                 button.Text = currentPlayer.ToString();
                 button.Enabled = false;
-                button.BackColor = System.Drawing.Color.DarkTurquoise;
+                button.BackColor = System.Drawing.Color.LightGreen;
                 counter++;
                 soundPlayer = new SoundPlayer("click.wav");
                 Check();
@@ -56,7 +56,7 @@ namespace FinalTicTacToe
                     x.Enabled = false;
                     currentPlayer = Player.O;
                     x.Text = currentPlayer.ToString();
-                    x.BackColor = System.Drawing.Color.DarkSeaGreen;
+                    x.BackColor = System.Drawing.Color.Crimson;
                     soundPlayer = new SoundPlayer("click.wav");
                     counter++;
                     timerAi.Stop();
@@ -105,6 +105,7 @@ namespace FinalTicTacToe
                 WON();
                 soundPlayer.Play();
                 lblScore1.Text = "Player Wins- " + playerWins;
+                counter = 0;
             }
             else if (
             Btn1.Text == "O" && Btn2.Text == "O" && Btn3.Text == "O" ||//Horizontal
@@ -122,6 +123,7 @@ namespace FinalTicTacToe
                 WON();
                 soundPlayer.Play();
                 lblScore2.Text = "Computer Wins- " + computerWins;
+                counter = 0;
             }
             counter = counter + 0;
             if (counter == 9)
