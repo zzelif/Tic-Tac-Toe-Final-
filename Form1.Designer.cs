@@ -1,6 +1,6 @@
 ﻿namespace FinalTicTacToe
 {
-    partial class Form1
+    partial class formTictactoe
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formTictactoe));
+            this.SuspendLayout();
+            // 
+            // formTictactoe
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.BurlyWood;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1082, 603);
+            this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Name = "formTictactoe";
+            this.Text = "Versus Bot";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
