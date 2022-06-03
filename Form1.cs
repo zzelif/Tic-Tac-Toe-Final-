@@ -73,9 +73,10 @@ namespace FinalTicTacToe
 
         private void resetGame(object sender, EventArgs e)
         {
+            soundPlayer = new SoundPlayer("click.wav");
+            soundPlayer.Play();
             foreach (Control x in this.Controls)
             {
-
                 if (x is Button && (string)x.Tag == "play")
                 {
                     ((Button)x).Enabled = true;
